@@ -1,17 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Heading />
+  <Calculator msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Heading from "./components/Heading.vue";
+import Calculator from "./components/Calculator.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // eslint-disable-next-line
+    Heading,
+    Calculator,
+  },
+};
 </script>
 
 <style>
